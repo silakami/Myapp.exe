@@ -4,9 +4,6 @@ import java.util.regex.Pattern;
 public class Main {
 
     public static void main(String[] args) {
-        String sds1 = "1 + 3 + 4";
-        String[] sds = sds1.split(" ");
-        System.out.println(sds.length);
         GenerateTitle generateTitle = new GenerateTitle();
         CheckResult checkResult = new CheckResult();
         FileOperation fileOperation = new FileOperation();
