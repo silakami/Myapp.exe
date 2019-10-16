@@ -314,10 +314,10 @@ public class GenerateTitle {
                                 leftBracket[lPoint]--;          //去掉该左括号
                                 continue;
                             }
-                            rightBracket[rPoint]++;             //添加右括号
+                            rightBracket[rPoint]++;    
                         }
                         else
-                            rightBracket[rPoint]++;             //添加右括号
+                            rightBracket[rPoint]++;   
                     }
                     else{                   //在生成左括号位置已经有左括号
                         if(rightBracket[rPoint] != 0) {         //右括号位置已经存在右括号，这种情况不合法，需要重新生成，如((3+4))+5
@@ -338,7 +338,7 @@ public class GenerateTitle {
                     }
                     judge_left = 0;
                     judge_right = 0;
-                    //由于为了避免增加复杂情况来进行判断，这里采用了从内向外的括号生成方法
+                    //由于为了避免增加复杂情况来进行判断，不同情况用不同的生成方法（从内向外，从外向内）
                     //这样减少了括号嵌套的概率，但使代码变简单
                     for(j = lPoint;j <= rPoint;j++){
                         if(leftBracket[j]!=0)
