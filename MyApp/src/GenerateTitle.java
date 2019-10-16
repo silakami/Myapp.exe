@@ -87,7 +87,7 @@ public class GenerateTitle {
             }*/
         }
         fileOperation.FWriter(title, answer);   //写入文件
-        System.out.println("ok");
+        //System.out.println("ok");
         return 0;
     }
 
