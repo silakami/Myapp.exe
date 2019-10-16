@@ -36,7 +36,7 @@ public class Main {
                 break;
             }
             else if(Pattern.matches(FILEMATCHONE, fileHandle)){
-                long startTime = System.currentTimeMillis(); //获取开始时间
+                //long startTime = System.currentTimeMillis(); //获取开始时间
                 judge = generateTitle.creatTitle(Integer.valueOf(fileSpit[2]), Integer.valueOf(fileSpit[4]));
                 if(judge == 0)
                     System.out.println("题目答案生成成功");
@@ -50,8 +50,8 @@ public class Main {
                     System.out.println("请重新输入，格式为：");
                     System.out.println("Myapp.exe -n x -r y     x为生成题目个数,y为题目中自然数，真分数，真分数分母的范围(x和y大于0)");
                 }
-                long endTime = System.currentTimeMillis(); //获取结束时间
-                System.out.println("程序运行时间：" + (endTime - startTime) + "ms"); //输出程序运行时间
+                //long endTime = System.currentTimeMillis(); //获取结束时间
+                //System.out.println("程序运行时间：" + (endTime - startTime) + "ms"); //输出程序运行时间
             }
             else if(Pattern.matches(FILEMATCHTWO, fileHandle)){
                 judge = fileOperation.FReader(fileSpit[2], fileSpit[4]);
